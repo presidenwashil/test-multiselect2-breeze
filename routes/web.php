@@ -12,4 +12,8 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::get('user-products', \App\Livewire\Pages\UserProduct::class)
+    ->middleware(['auth'])
+    ->name('user-products');
+
 require __DIR__.'/auth.php';
